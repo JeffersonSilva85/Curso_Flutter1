@@ -361,6 +361,222 @@ import 'package:projeto/home_controller.dart';
 
 // Stack (column e row) Em cima do outro não abaixo e nem acima
 
+// class HomePage extends StatefulWidget {
+//   const HomePage({super.key});
+
+//   @override
+//   State<HomePage> createState() => _HomePageState();
+// }
+
+// class _HomePageState extends State<HomePage> {
+//   final controller = TextEditingController();
+
+//   final list = <String>[];
+
+//   @override
+//   Widget build(BuildContext context) {
+//     final names = ['Jefferson', 'Henrique', 'Cauã'];
+
+//     return Scaffold(
+//       appBar: AppBar(
+//         title: const Text('Curso Flutterando'),
+//       ),
+//       body: Center(
+//         child: Stack(
+//           alignment: Alignment.center,
+//           children: [
+//             Container(
+//               color: Colors.green,
+//               height: 100,
+//               width: 100,
+//             ),
+//             Container(
+//               color: Colors.red,
+//               height: 70,
+//               width: 70,
+//             ),
+//           ],
+//         ),
+//       ),
+//     );
+//   }
+// }
+
+// Image.network (Internet)
+
+// class HomePage extends StatefulWidget {
+//   const HomePage({super.key});
+
+//   @override
+//   State<HomePage> createState() => _HomePageState();
+// }
+
+// class _HomePageState extends State<HomePage> {
+//   final controller = TextEditingController();
+
+//   final list = <String>[];
+
+//   @override
+//   Widget build(BuildContext context) {
+//     final names = ['Jefferson', 'Henrique', 'Cauã'];
+
+//     return Scaffold(
+//       appBar: AppBar(
+//         title: const Text('Curso Flutterando'),
+//       ),
+//       body: Center(
+//         child: Stack(
+//           alignment: Alignment.center,
+//           children: [
+//             SizedBox(
+//               height: MediaQuery.of(context).size.height,
+//               width: MediaQuery.of(context).size.width,
+//               child: Image.network(
+//                 'https://palmeirasweb.com/wp-content/uploads/2020/07/palmeiras___light_by_panico747-d53naxf.jpg',
+//                 fit: BoxFit.cover,
+//               ),
+//             ),
+//             Container(
+//               color: Colors.green,
+//               height: 100,
+//               width: 100,
+//             ),
+//             Container(
+//               color: Colors.red,
+//               height: 70,
+//               width: 70,
+//             ),
+//             Container(
+//               color: Color.fromARGB(255, 252, 249, 249),
+//               height: 40,
+//               width: 40,
+//             ),
+//           ],
+//         ),
+//       ),
+//     );
+//   }
+// }
+
+// Image.asset (Imagens locais)
+
+// class HomePage extends StatefulWidget {
+//   const HomePage({super.key});
+
+//   @override
+//   State<HomePage> createState() => _HomePageState();
+// }
+
+// class _HomePageState extends State<HomePage> {
+//   final controller = TextEditingController();
+
+//   final list = <String>[];
+
+//   @override
+//   Widget build(BuildContext context) {
+//     final names = ['Jefferson', 'Henrique', 'Cauã'];
+
+//     return Scaffold(
+//       appBar: AppBar(
+//         title: const Text('Curso Flutterando'),
+//       ),
+//       body: Center(
+//         child: Stack(
+//           alignment: Alignment.center,
+//           children: [
+//             SizedBox(
+//               height: MediaQuery.of(context).size.height,
+//               width: MediaQuery.of(context).size.width,
+//               child: Image.asset(
+//                 'assets/imgs/palmeiras.jpg.jpg',
+//                 fit: BoxFit.cover,
+//               ),
+//             ),
+//             Container(
+//               color: Colors.green,
+//               height: 100,
+//               width: 100,
+//             ),
+//             Container(
+//               color: Colors.red,
+//               height: 70,
+//               width: 70,
+//             ),
+//             Container(
+//               color: Color.fromARGB(255, 252, 249, 249),
+//               height: 40,
+//               width: 40,
+//             ),
+//           ],
+//         ),
+//       ),
+//     );
+//   }
+// }
+
+//Stack como máscara (ideia de instagram)
+
+// class HomePage extends StatefulWidget {
+//   const HomePage({super.key});
+
+//   @override
+//   State<HomePage> createState() => _HomePageState();
+// }
+
+// class _HomePageState extends State<HomePage> {
+//   final controller = TextEditingController();
+
+//   final list = <String>[];
+
+//   @override
+//   Widget build(BuildContext context) {
+//     final names = ['Jefferson', 'Henrique', 'Cauã'];
+
+//     return Scaffold(
+//       appBar: AppBar(
+//         title: const Text('Curso Flutterando'),
+//       ),
+//       body: Center(
+//         child: Stack(
+//           alignment: Alignment.center,
+//           children: [
+//             SizedBox(
+//               height: MediaQuery.of(context).size.height,
+//               width: MediaQuery.of(context).size.width,
+//               child: Image.asset(
+//                 'assets/imgs/palmeiras.jpg.jpg',
+//                 fit: BoxFit.cover,
+//               ),
+//             ),
+//             Container(
+//               color: Color.fromARGB(255, 253, 251, 251).withOpacity(0.50),
+//               height: MediaQuery.of(context).size.height,
+//               width: MediaQuery.of(context).size.width,
+//             ),
+//             Container(
+//               color: Colors.green,
+//               height: 100,
+//               width: 100,
+//             ),
+//             Container(
+//               color: Colors.red,
+//               height: 70,
+//               width: 70,
+//             ),
+//             Container(
+//               color: Color.fromARGB(255, 252, 249, 249),
+//               height: 40,
+//               width: 40,
+//             ),
+//           ],
+//         ),
+//       ),
+//     );
+//   }
+// }
+
+// Stack com Rows e Columns
+
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
 
@@ -385,15 +601,34 @@ class _HomePageState extends State<HomePage> {
         child: Stack(
           alignment: Alignment.center,
           children: [
-            Container(
-              color: Colors.green,
-              height: 100,
-              width: 100,
+            SizedBox(
+              height: MediaQuery.of(context).size.height,
+              width: MediaQuery.of(context).size.width,
+              child: Image.asset(
+                'assets/imgs/palmeiras.jpg.jpg',
+                fit: BoxFit.cover,
+              ),
             ),
             Container(
-              color: Colors.red,
-              height: 70,
-              width: 70,
+              color: Colors.white.withOpacity(0.50),
+              height: MediaQuery.of(context).size.height,
+              width: MediaQuery.of(context).size.width,
+            ),
+            SizedBox(
+              height: MediaQuery.of(context).size.height,
+              width: MediaQuery.of(context).size.width,
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  const FlutterLogo(
+                    size: 150,
+                    textColor: Colors.white,
+                    style: FlutterLogoStyle.horizontal,
+                  ),
+                  ElevatedButton(
+                      onPressed: () {}, child: const Text('Entrar no app')),
+                ],
+              ),
             ),
           ],
         ),
